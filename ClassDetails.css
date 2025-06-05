@@ -1,0 +1,104 @@
+.class-details {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
+  color: #111;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.class-details h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #1e90ff;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 4px solid #1e90ff;
+  display: inline-block;
+  padding-bottom: 12px;
+  position: relative;
+}
+
+.class-details table {
+  margin: 0 auto;
+  border-collapse: separate; /* changed from collapse for spacing */
+  border-spacing: 0 12px; /* vertical space between rows */
+  width: 95%;
+  max-width: 850px;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.class-details table:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.class-details th,
+.class-details td {
+  padding: 18px 24px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #333;
+  transition: background-color 0.25s ease;
+}
+
+.class-details th {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 1.05rem;
+  border-bottom: none; /* remove border because of border-spacing */
+  border-radius: 12px 12px 0 0; /* round header corners */
+}
+
+.class-details tbody tr {
+  background: #f9fbff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 123, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.class-details tbody tr:hover {
+  background-color: #e8f2ff;
+  cursor: pointer;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.25);
+}
+
+.class-details tr:last-child td {
+  border-bottom: none;
+}
+
+/* Style each timing inside timings cell */
+.class-details td > div {
+  margin: 4px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .class-details table,
+  .class-details th,
+  .class-details td {
+    font-size: 1rem;
+    padding: 14px 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .class-details table {
+    width: 100%;
+  }
+
+  .class-details th,
+  .class-details td {
+    font-size: 0.95rem;
+    padding: 12px 10px;
+  }
+}

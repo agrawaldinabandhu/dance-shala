@@ -41,8 +41,9 @@ yarn start
 Visit http://localhost:3000 in your browser.
 
 🌍 Deployment
-```
+
 You can deploy this site easily using:
+```
 Vercel
 Netlify
 GitHub Pages
@@ -50,7 +51,7 @@ GitHub Pages
 
 📸 Screenshots
 ```
-Add screenshots here after deployment to showcase your website.
+You can add screenshots in assets folder.
 ```
 
 🙏 Credits

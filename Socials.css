@@ -1,0 +1,107 @@
+.socials-section {
+  background: linear-gradient(135deg, #0a3d62, #154a8a);
+  color: #eee;
+  padding: 50px 0;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.25);
+  border-top: 2px solid rgba(255, 255, 255, 0.12);
+  transition: background 0.4s ease;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  background-color: rgba(10, 61, 98, 0.9) !important;
+  border: 2px solid red !important;
+}
+
+.social-icons {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  color: #a8c0ff;
+  font-size: 30px;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.35s ease,
+              background 0.35s ease,
+              color 0.35s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.social-icons a:hover,
+.social-icons a:focus {
+  transform: translateY(-6px) scale(1.15);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.35);
+  outline: none;
+}
+
+/* Branded hover backgrounds with smooth gradients */
+.social-icons a.facebook:hover {
+  color: #3b5998;
+  background: linear-gradient(135deg, #3b5998 0%, #2d4373 100%);
+  box-shadow: 0 10px 30px rgba(59, 89, 152, 0.6);
+}
+
+.social-icons a.instagram:hover {
+  color: #e4405f;
+  background: linear-gradient(135deg, #e4405f 0%, #d81e5b 100%);
+  box-shadow: 0 10px 30px rgba(228, 64, 95, 0.6);
+}
+
+.social-icons a.youtube:hover {
+  color: #ff0000;
+  background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+  box-shadow: 0 10px 30px rgba(255, 0, 0, 0.6);
+}
+
+.social-icons a.email:hover {
+  color: #6fcf97;
+  background: linear-gradient(135deg, #6fcf97 0%, #4bbf73 100%);
+  box-shadow: 0 10px 30px rgba(111, 207, 151, 0.6);
+}
+
+.socials-section p {
+  font-size: 1rem;
+  color: #ddd;
+  margin: 0;
+  letter-spacing: 0.6px;
+  font-weight: 500;
+  user-select: none;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .socials-section {
+    padding: 35px 15px;
+    min-height: 150px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .social-icons {
+    gap: 24px;
+  }
+
+  .social-icons a {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+}
